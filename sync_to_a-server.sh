@@ -3,7 +3,7 @@
 
 # 配置区
 LOCAL_BACKUP_DIR="/www/wwwroot/py_backup"
-GITEE_REPO="git@gitee-backup:wly-lizhong/a-server.git"  # 已验证的仓库
+GITEE_REPO="git@gitee-backup:xxxxxxx.git"  # 已验证的仓库
 LOG_FILE="/www/wwwlogs/sync_to_a-server.log"
 MAX_RETRIES=3
 RETRY_DELAY=15
@@ -130,7 +130,7 @@ done
 if $push_success; then
     echo "✅ 同步成功完成！" >> "$LOG_FILE"
     echo "   同步时间: $(date)" >> "$LOG_FILE"
-    echo "   同步到: https://gitee.com/wly-lizhong/a-server" >> "$LOG_FILE"
+    echo "   同步到: https://gitee.com/xxxxxxr" >> "$LOG_FILE"
     echo "   分支: $BRANCH" >> "$LOG_FILE"
     echo "   本地备份数: $recent_backups" >> "$LOG_FILE"
 else
