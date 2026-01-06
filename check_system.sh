@@ -26,7 +26,7 @@ fi
 # 2. Gitee同步状态
 echo ""
 echo "2. Gitee同步状态"
-echo "   仓库地址: https://gitee.com/wly-lizhong/a-server"
+echo "   仓库地址: https://gitee.com/xxxxxx"
 echo "   SSH连接测试:"
 if ssh -T git@gitee-backup 2>&1 | grep -q "successfully"; then
     echo "   ✅ SSH连接正常"
@@ -67,4 +67,4 @@ echo ""
 echo "📋 操作命令:"
 echo "1. 手动同步: cd /www/wwwroot/py_backup && bash sync_to_a-server.sh"
 echo "2. 查看日志: tail -f /www/wwwlogs/sync_to_a-server.log"
-echo "3. 检查仓库: https://gitee.com/wly-lizhong/a-server"
+echo "3. 检查仓库: https://gitee.comxxxxxxx"
