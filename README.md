@@ -1,4 +1,4 @@
-```markdown
+markdown
 # 🚀 服务器生产环境自动化备份系统
 
 **全自动、本地30天 + 云端永久备份，使用宝塔面板 + GitHub/Gitee 实现企业级容灾**
@@ -95,29 +95,4 @@ MIT License - 可自由使用、修改、分发
 
 **项目已稳定运行超过30天，备份成功率100%**
 
-```
-### 第四步：把文件上传到 GitHub
-
-有两种最简单的方法，任选其一：
-
-#### 方法一：直接用 GitHub 网页上传（最推荐新手）
-
-1. 打开你的仓库页面（https://github.com/你的用户名/auto-backup-system）
-2. 点击 “Add file” → “Upload files”
-3. 把上面准备好的所有文件（.gitignore、各个 .sh、README.md 等）拖拽上传
-4. 下面填写 Commit message：`Initial commit: 上传自动化备份系统完整代码和文档`
-5. 点击绿色 “Commit changes”
-
-全部上传完成！
-
-#### 方法二：用 git 命令（如果你服务器上想直接推）
-
-在服务器的 `/www/wwwroot/py_backup` 目录下执行：
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin git@github.com:你的用户名/auto-backup-system.git
-git push -u origin main
-```
 
