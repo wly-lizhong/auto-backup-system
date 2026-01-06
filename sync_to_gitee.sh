@@ -5,7 +5,7 @@
 
 # 配置区（请根据实际情况修改）
 LOCAL_BACKUP_DIR="/www/wwwroot/py_backup"       # 本地备份根目录
-GITEE_REPO="git@gitee-backup:wly-lizhong/a-server-backup-prod.git"  # Gitee仓库地址
+GITEE_REPO="git@gitee-backup:xxxxxxxxxxxxxxxx"git@  # Gitee仓库地址
 SYNC_LOG="/www/wwwroot/py_backup/gitee_sync_backup.log"   # 同步日志
 MAX_RETRIES=3                                    # 最大重试次数
 RETRY_DELAY=30                                   # 重试间隔（秒）
@@ -206,7 +206,7 @@ for attempt in $(seq 1 $MAX_RETRIES); do
         
         if echo "$push_output" | grep -q "repository not found"; then
             echo "   错误：仓库不存在或地址错误" >> "$SYNC_LOG"
-            echo "   请检查: https://gitee.com/wly-lizhong/a-server-backup-prod" >> "$SYNC_LOG"
+            echo "   请检查: https://gitee.com/xxxxxxxxxxxxxxxxxxxxxxxx" >> "$SYNC_LOG"
         elif echo "$push_output" | grep -q "Permission denied"; then
             echo "   错误：权限被拒绝" >> "$SYNC_LOG"
             echo "   请确认：1. 仓库是否私有 2. 是否有推送权限" >> "$SYNC_LOG"
@@ -235,7 +235,7 @@ if $push_success; then
     echo "   总文件数: $file_count" >> "$SYNC_LOG"
     echo "   总大小: $total_size" >> "$SYNC_LOG"
     echo "   Gitee分支: $BRANCH" >> "$SYNC_LOG"
-    echo "   仓库地址: https://gitee.com/wly-lizhong/a-server-backup-prod" >> "$SYNC_LOG"
+    echo "   仓库地址: https://gitee.comxxxxxxxxxxxxxxxxxxxxxx" >> "$SYNC_LOG"
     
     # 显示最新的备份日期
     latest_backup=$(find . -maxdepth 1 -type d -name "202*" | sort -r | head -1 | sed 's|^\./||')
