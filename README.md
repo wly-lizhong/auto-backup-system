@@ -23,9 +23,10 @@
 ```
 ## ⚙️ 核心脚本
 
-- `backup_compress.sh`：主备份脚本（筛选、压缩、分卷、清理）
+- `backup_compress.sh、.gitignore`：主备份脚本（筛选、压缩、分卷、清理）
 - `sync_to_github.sh`：增量同步到 GitHub 仓库（可修改为 Gitee）
 - `check_system.sh`：系统健康检查（备份状态、磁盘、连接等）
+  
 
 ## 🚀 快速部署（5 分钟）
 
